@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Bikey</string>
+    <string name="reg_prompt_number">254722000000</string>
+    <string name="reg_prompt_first_name">Enter First Name</string>
+    <string name="reg_prompt_last_name">Enter Last Name</string>
+    <string name="reg_prompt_email">any.one@email.com</string>
+    <string name="reg_prompt_password">Enter Password</string>
+    <string name="reg_login_prompt">Already a member? Login</string>
+</resources>

@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_register"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    android:background="@color/colorPrimary">
+
+
+    <EditText
+        android:id="@+id/txtRegPhoneNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorAccent"
+        android:textColorHint="@color/colorHint"
+        android:hint="@string/reg_prompt_number"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/txtRegFirstName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtRegPhoneNumber"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/colorAccent"
+        android:textColorHint="@color/colorHint"
+        android:hint="@string/reg_prompt_first_name"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/txtRegLastName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtRegFirstName"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/colorAccent"
+        android:textColorHint="@color/colorHint"
+        android:hint="@string/reg_prompt_last_name"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/txtRegEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtRegLastName"
+        android:layout_marginTop="10dp"
+        android:hint="@string/reg_prompt_email"
+        android:textColor="@color/colorAccent"
+        android:textColorHint="@color/colorHint"
+        android:inputType="textEmailAddress" />
+
+    <EditText
+        android:id="@+id/txtRegPass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtRegEmail"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/colorAccent"
+        android:textColorHint="@color/colorHint"
+        android:hint="@string/reg_prompt_password"
+        android:inputType="textPassword" />
+
+    <Button
+        android:id="@+id/bttnReg"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtRegPass"
+        android:background="@color/colorAccent"
+        android:textColor="@color/colorPrimary"
+        android:layout_marginTop="20dp"
+        android:layout_alignParentLeft="true"
+        android:text="Save"/>
+
+    <Button
+        android:id="@+id/bttnRegCancel"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtRegPass"
+        android:background="@color/colorAccent"
+        android:textColor="@color/colorPrimary"
+        android:layout_marginTop="20dp"
+        android:layout_alignParentRight="true"
+        android:text="Cancel"/>
+
+    <TextView
+        android:id="@+id/txtRegLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/bttnReg"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:textColor="@color/colorAccent"
+        android:text="@string/reg_login_prompt"
+        />
+
+    <ProgressBar
+        android:id="@+id/registerBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:indeterminate="true"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/bttnRegCancel"
+        android:visibility="gone" />
+
+
+</RelativeLayout>
